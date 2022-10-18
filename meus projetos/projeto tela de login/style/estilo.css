@@ -1,0 +1,51 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1:#4C5B61;
+    --cor2:#829191;
+    --cor3:#D0FFCE;
+    --font:'PT Sans', sans-serif;
+}
+body, html{
+    background-color: var(--cor1);
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+section{
+    background-color: #fff;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+section article#imag{
+    display: block;
+    height: 200px;
+    background: var(--cor1) url('../imagem/pexels-scott-webb-1544947.jpg') center center no-repeat fixed;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 10px #00000095;
+}
+section #formulário{
+    display: block;
+    padding: 10px;
+
+}
