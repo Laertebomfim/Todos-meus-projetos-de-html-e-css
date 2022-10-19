@@ -34,6 +34,9 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+
+    transition: width .5s, heght .5s;
+    transition-timing-function: ease;
 }
 section article#imag{
     display: block;
@@ -44,8 +47,104 @@ section article#imag{
     border-top-right-radius: 10px;
     box-shadow: 0px 0px 10px #00000095;
 }
-section #formulário{
+section #formulario{
     display: block;
     padding: 10px;
 
+}
+section #formulario h1{
+    text-align: center;
+}
+ article#formulario > p{
+    font-size: .8em;
+}
+form > article.contem{
+    background-color: var(--cor3);
+    padding:10px ;
+    padding-bottom: 5px;
+}
+form >article#login{
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+form > article#login>[type=email]{
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    text-indent: 1em;
+}
+form > article#login2 > [type=password]{
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    text-indent: 1em;
+}
+form > article#login2{
+    padding-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+form{
+    position: relative;
+}
+form > article#login label#label{
+    position: absolute;
+    top: 9px;
+    left: 175px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000b3;
+}
+form > article#login2 > label{
+    position: absolute;
+    left: 175px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000bc;
+}
+form >input[type=submit]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor2);
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    color: var(--cor3);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.678);
+    cursor: pointer;
+    margin-top: 10px;
+}
+form > input[type=submit]:hover{
+    background-color: var(--cor1);
+    transition: .9s;
+    font-size: 1.1em;
+}
+form > a.botão {
+    display: block;
+    background-color: var(--cor2);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--cor3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.673);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-top: 8px;
+    position: relative;
+}
+form > a.botão:hover{
+
+    background-color: var(--cor1);
+    font-size: 1.1em;
+    transition: .9s;
+}
+form > a.botão > span#icon{
+    font-size: 1.75em;
+    padding-left: 8px;
+    position: absolute;
+    top: 5px;
 }

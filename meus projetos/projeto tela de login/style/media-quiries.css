@@ -1,0 +1,72 @@
+@charset "UTF8";
+
+@media screen and (min-width:768px)  and (max-width:992px) {
+    body{
+        background-image: linear-gradient(to top, #4C5B61, #829191);
+    }
+    main section{
+        width: 90vw;
+        overflow: hidden;
+        height: 70vh;
+
+    }
+     #login > #imag{
+        float:right;
+       width: 30%;
+        height: 100%;
+        border-top-left-radius: 0px;
+         
+    }
+    section #formulario{
+       float: left ;
+        width: 70%;
+        
+    }
+    section #formulario h1{
+        font-size: 2em;
+    }
+    section #formulario p {
+        font-size: 1.5em;
+        margin: 10px 0px;
+    }
+    
+    /*eu tenha que faz o formulario */
+     #form{
+        background-color: #4C5B61;
+        position: relative;
+        height: 300px;
+    }
+    form > article#login{
+        position: absolute;
+    }
+}
+/*tela para tv*/
+@media screen and (min-width:992px) {
+    body{
+        background-image: linear-gradient(to top, #4C5B61, #829191);
+    }
+    section{
+        width: 90vw;
+        overflow: hidden;
+        
+    }
+    section#login #imag{
+        float: right;
+        width: 50%;
+        height: 100%;
+        border-top-left-radius: 0px;
+    }
+    section #formulario{
+        float: left;
+        width: 50%;
+    }
+    section#login #formulario h1{
+        font-size: 2em;
+    }
+    section#login article#formulario p {
+        font-size: 1.5em;
+
+
+
+    }
+}
