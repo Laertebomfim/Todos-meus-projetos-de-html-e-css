@@ -68,7 +68,7 @@ form >article#login{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-form > article#login>[type=email]{
+form  article#login>[type=email]{
     height: 30px;
     border: none;
     border-radius: 10px;

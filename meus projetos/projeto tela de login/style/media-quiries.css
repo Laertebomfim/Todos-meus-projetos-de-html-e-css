@@ -31,15 +31,15 @@
     }
     
     /*eu tenha que faz o formulario */
-     #form{
+    form  article.contem{
         background-color: #4C5B61;
-        position: relative;
-        height: 300px;
-    }
-    form > article#login{
-        position: absolute;
+        text-indent: 10em;
+
     }
 }
+    form > article#login > label{
+        transform: translate(-40%, 10%);
+    }
 /*tela para tv*/
 @media screen and (min-width:992px) {
     body{
