@@ -32,13 +32,12 @@
     
     /*eu tenha que faz o formulario */
     form  article.contem{
-        background-color: #4C5B61;
         text-indent: 10em;
 
     }
 }
-    form > article#login > label{
-        transform: translate(-40%, 10%);
+    form > article.contem > label{
+        transform: translate(-45%, 10%);
     }
 /*tela para tv*/
 @media screen and (min-width:992px) {
@@ -65,8 +64,19 @@
     }
     section#login article#formulario p {
         font-size: 1.5em;
-
-
-
-    }
+     }
+     form > article.contem{
+        background-color: #4C5B61;
+     }
+     form > article.contem > label{
+        transform: translate(300%, 20% );
+     }
+     form > article.contem [type=email], [type=password] {
+        
+        background-color: #829191;
+        transform: translate(50%);
+     }
+     form > article.contem [type=email]:focus-within, [type=password]:focus-within{
+        background-color: #fff;
+     }
 }
