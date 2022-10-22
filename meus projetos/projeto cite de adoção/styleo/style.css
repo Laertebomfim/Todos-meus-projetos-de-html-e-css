@@ -1,0 +1,39 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+@font-face {
+    font-family: 'fonte';
+    src: url('../fontes/Kanit-light.ttf') format('truetype');
+}
+
+*{
+    font-family: 'fonte', Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+/*style para celulares*/
+
+
+:root{
+    --fonte:'fonte', Helvetica, sans-serif; 
+    --fonte:'Roboto Condensd', Helvetica, sans-serif;
+    --cor:#969a97;
+    --cor2:#d6d1cd;
+    --cor3:#173753;
+    --cor4:#1B4353;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background: #000 url('../imagem/pexels-matheus-viana-2414036.jpg') left center no-repeat fixed;
+    background-size:cover;
+}
+header > img{
+    width: 50px;
+    display: inline;
+    border-radius: 50%;
+    border: 3px solid var(--cor);
+    box-sizing: border-box;
+}
