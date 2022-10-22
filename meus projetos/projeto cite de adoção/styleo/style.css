@@ -27,8 +27,13 @@
 html, body{
     width: 100vw;
     height: 100vh;
-    background: #000 url('../imagem/pexels-matheus-viana-2414036.jpg') left center no-repeat fixed;
+    background: #000 url('../imagem/pexel-novo.jpg') left center no-repeat fixed;
     background-size:cover;
+}
+header{
+    width:100vw;
+    height: 300px;
+    padding: 10px;
 }
 header > img{
     width: 50px;
@@ -36,4 +41,21 @@ header > img{
     border-radius: 50%;
     border: 3px solid var(--cor);
     box-sizing: border-box;
+    margin-top: 10px;
+}header h1{
+    display: inline;
+    color: #fff;
+    text-shadow: 1px 3px 3px #000;
+    font-size: 2.5em;
+    position: absolute;
+    transform: translate(10px, 5px);
+}
+header p{
+    font-weight: bold;
+}
+header menu{
+    width: 500000000000000000000000000000000000;
+    display: block;
+    margin: auto;
+   
 }
