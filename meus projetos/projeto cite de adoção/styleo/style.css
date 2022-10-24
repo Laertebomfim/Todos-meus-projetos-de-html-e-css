@@ -30,9 +30,12 @@ html, body{
     background: #000 url('../imagem/pexel-novo.jpg') left center no-repeat fixed;
     background-size:cover;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 header{
     width:100vw;
-    height: 300px;
+    height: 200px;
     padding: 10px;
 }
 header > img{
@@ -54,8 +57,45 @@ header p{
     font-weight: bold;
 }
 header menu{
-    width: 500000000000000000000000000000000000;
+    width: 400px;
     display: block;
     margin: auto;
-   
+    text-align: center;
+    margin-top: 50px;
+}
+header menu > a{
+    text-decoration: none;
+    font-family: var(--fonte);
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin-left: 30px;
+    background-color: var(--cor);
+    color: var(--cor3);
+    padding: 20px;
+    box-sizing: border-box;
+}
+header menu > a:hover{
+    background-color:#fff;
+    border: 2px solid var(--cor3);
+    box-sizing: border-box;
+    transition: .5s;
+}
+main article > iframe{
+    height: 1240px;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+main article p{
+    padding: 10px;
+    font-weight: bold;
+    color: #323131;
+    margin-top: 20px;
+}
+main article  table{
+    width: 95vw;
+    margin: auto;
+    background-color: var(--cor);
+}main article table th{
+    /*para colecar no topo*/
 }
