@@ -74,6 +74,7 @@ header menu > a{
     color: var(--cor3);
     padding: 15px;
     box-sizing: border-box;
+
 }
 header menu > a:hover{
     background-color:#fff;
@@ -104,6 +105,12 @@ main article  table{
     margin: auto;
     background-color: var(--cor);
     border-collapse: collapse;
+    position: relative;
+    /* Aqui*/
+}
+main article table th.position{
+    position: sticky;
+    top: 0px;
 }
 main article table thead th{
     background-color: #fff;

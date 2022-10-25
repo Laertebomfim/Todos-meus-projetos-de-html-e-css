@@ -1,0 +1,8 @@
+@charset "UTF8";
+
+
+main iframe{
+    transform: translate(-0%,-5%);
+    max-height: 1100px;
+   
+}
