@@ -92,120 +92,122 @@
             </table>
         </article>¨
         <aside>
-            <h2>cadetre-se</h2>
             <p>Faça o cadastro para poder ter o seu pet e alegra a sua vida e a dele</p>
             <article>
-                <form action="" method="post" autocomplete="on">
-                    <div>
-                        <label for="idnome">Nome</label>
-                        <input type="text" name="nome" id="idnome">
-                    </div>
-
-                    <div>
-                        <label for="iddata">data de nacimento</label>
-                        <input type="date" name="data" id="iddata">
-                    </div>
+                <fieldset>
+                    <legend>cadastres-se</legend>
+                    <form action="" method="post" autocomplete="on">
+                        <div>
+                            <label for="idnome">Nome</label>
+                            <input type="text" name="nome" id="idnome" required minlength="9" maxlength="25"  autocomplete="name" placeholder="Nome completo">
+                        </div>
+                        <div>
+                            <label for="iddata">data de nacimento</label>
+                            <input type="date" name="data" id="iddata">
+                        </div>
                     
-                    <div>
+                        <div id="chackbox">
+                    
+                            <p>
+                                Se fosse para ter um desses animais quas seria?
+                            </p>
+                            <label for="idtartaruga">tartaruga tigre d'água</label>
+                            <input type="checkbox" name="tartaruga" id="idtartaruga" checked>
+                            <br>
+                            <label for="idFurão">Furão</label>
+                            <input type="checkbox" name="Furão" id="idFurão">
+                            <br>
+                            <label for="idiguana">Iguana</label>
+                            <input type="checkbox" name="Iguana" id="idiguana">
+                            <br>
+                            <label for="idtarântula">Tarântula</label>
+                            <input type="checkbox" name="tarântula" id="idtarâtura">
+                            <br>
+                            <label for="idporquinho">Porquinho da índia</label>
+                            <input type="checkbox" name="porquinho" id="idporquinho">
+                            <br>
+                            <label for="idhamster">Hamster</label>
+                            <input type="checkbox" name="hamster" id="idhamster">
+                            <br>
+                            <label for="idcoelho">Coelho</label>
+                            <input type="checkbox" name="coelho" id="idcoelho">
+                            <br>
+                            <label for="idgato">Goto</label>
+                            <input type="checkbox" name="gato" id="idgato">
+
+                        </div>
                         
-                        <p>
-                            Se fosse para ter um desses animais quas seria
-                        </p>
-                        <label for="idtartaruga">tartaruga tigre d'água</label>
-                        <input type="checkbox" name="tartaruga" id="idtartaruga" checked>
-
-                        <label for="idFurão">Furão</label>
-                        <input type="checkbox" name="Furão" id="idFurão">
-
-                        <label for="idiguana">Iguana</label>
-                        <input type="checkbox" name="Iguana" id="idiguana">
-
-                        <label for="idtarântula"></label>
-                        <input type="checkbox" name="tarântula" id="idtarâtura">
-
-                        <label for="idporquinho">Porquinho da índia</label>
-                        <input type="checkbox" name="porquinho" id="idporquinho">
-
-                        <label for="idhamster">Hamster</label>
-                        <input type="checkbox" name="hamster" id="idhamster">
-
-                        <label for="idcoelho">Coelho</label>
-                        <input type="checkbox" name="coelho" id="idcoelho">
-
-                        <label for="idgato">Goto</label>
-                        <input type="checkbox" name="gato" id="idgato">
-                    </div>
-
-                    <div>
-                        <label for="idcachorro">Cachorro</label>
-                        <input type="radio" name="pets" id="idcachorro">
-
-                        <label for="idgato">Gato</label>
-                        <input type="radio" name="pets" id="idgoto">
-
-                        <label for="idcalopisita">Calopisita</label>
-                        <input type="radio" name="pets" id="idcalopisita">
-                         
-
-                        <label for="idhamster">Hamster</label>
-                        <input type="range" name="pets" id="idhamster" checked>
-                    </div>
-
-                    <div>
-                        <label for="idtem">Quais petis você ja tem em casa ?</label>
-                        <input type="text" name="tem" id="idtem" list="lista">
-                        <datalist id="lista">
-                            <optgroup label="pets">
-                                <option value="1">Cachorro</option>
-                                <option value="2">Gato</option>
-                                <option value="3">Passaro</option>
-                                <option value="4">tartaruga</option>
-                            </optgroup>
-                        </datalist>
-                    </div>
-                    <div>
-                        <p>porque você gostara de um pet?</p>
-                        <textarea name="texto" id="idtexto" cols="30" rows="10"> 
-                            <p>Digite aqui...</p>
-                        </textarea>
-                    </div>
-                </form>
+                        <div id="radio">
+                            <p>Quais desses seria um dos seu favorito?</p>
+                            <label for="idcachorro">Cachorro</label>
+                            <input type="radio" name="pets" id="idcachorro">
+                            <br>
+                            <label for="idgato">Gato</label>
+                            <input type="radio" name="pets" id="idgoto">
+                            <br>
+                            <label for="idcalopisita">Calopisita</label>
+                            <input type="radio" name="pets" id="idcalopisita">
+                            <br>
+                    
+                            <label for="idhamster">Hamster</label>
+                            <input type="radio" name="pets" id="idhamster" checked>
+                        </div>
+                        <div>
+                            <label for="idtem">Quais petis você ja tem em casa ?</label>
+                            <input type="text" name="tem" id="idtem" list="lista" required>
+                            <datalist id="lista">
+                                <optgroup label="pets">
+                                    <option value="1">Cachorro</option>
+                                    <option value="2">Gato</option>
+                                    <option value="3">Passaro</option>
+                                    <option value="4">tartaruga</option>
+                                </optgroup>
+                            </datalist>
+                        </div>
+                        <div id="texto">
+                            <p>porque você gostara de um pet?</p>
+                            <textarea name="texto" id="idtexto" cols="30" rows="5" required minlength="20" maxlength="30">
+                            </textarea>
+                            
+                        </div>
+                        <div>
+                                <input type="submit" value="Envia">
+                            </div>
+                    </form>
+                </fieldset>
             </article>
         </aside>
     </main>
     <footer>
        <aside>
         <p>Òla caro amigo para que você tenha mas confiança em nosso progeroto deixaremos link para nossas afilias</p>
-        <h3>
-            
-        </h3>
         <hr>
         
         <nav>
             <ul>
-                <li><a href="">Ame pet</a></li>
+                <li><a href="#" target="_blank" rel="externol">Ame pet</a></li>
 
-                <li><a href="">pet do coração</a></li>
+                <li><a href="#" target="_blank" rel="external">pet do coração</a></li>
 
-                <li><a href="">Adote</a></li>
+                <li><a href="#" target="_blank" rel="external">Adote</a></li>
 
-                <li><a href="">Amor pet</a></li>
+                <li><a href="#" target="_blank" rel="external">Amor pet</a></li>
 
-                <li><a href="">pet sss</a></li>
+                <li><a href="#" target="_blank" rel="external">pet sss</a></li>
 
-                <li><a href="">vamos adota</a></li>
+                <li><a href="#" target="_blank" rel="external">vamos adota</a></li>
 
-                <li><a href="">tudo camessa da adoçâo</a></li>
+                <li><a href="#" target="_blank" rel="external">tudo camessa da adoçâo</a></li>
 
-                <li><a href="">gota de amor</a></li>
+                <li><a href="#" target="_blank" rel="external">gota de amor</a></li>
 
-                <li><a href="">vida do pet</a></li>
+                <li><a href="#" target="_blank" rel="external">vida do pet</a></li>
 
-                <li><a href="">pet na veia</a></li>
+                <li><a href="#" target="_blank" rel="external">pet na veia</a></li>
 
-                <li><a href="">por que pet</a></li>
+                <li><a href="#" target="_blank" rel="external">por que pet</a></li>
 
-                <li><a href="">pet e amor</a></li>
+                <li><a href="#" target="_blank" rel="external">pet e amor</a></li>
             </ul>
         </nav>
        </aside> 

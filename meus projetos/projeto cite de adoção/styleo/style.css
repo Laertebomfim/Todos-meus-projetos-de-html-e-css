@@ -55,6 +55,7 @@ header > img{
 }
 header p{
     font-weight: bold;
+    padding: 5px;
 }
 header menu{
     width: 400px;
@@ -77,16 +78,22 @@ header menu > a{
 header menu > a:hover{
     background-color:#fff;
     border: 2px solid var(--cor3);
-    box-sizing: border-box;
     transition: .5s;
+    box-sizing: border-box;
+}
+main table caption{
+    font: 600 1.2em var(--fonte);
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.666);
 }
 main article > iframe{
-    height: 1240px;
+    height: 1250px;
     width: 100%;
     margin: auto;
     display: block;
+    margin-top: 50px;
 }
-main article p{
+main article > p{
     padding: 10px;
     font-weight: bold;
     color: #323131;
@@ -96,6 +103,120 @@ main article  table{
     width: 95vw;
     margin: auto;
     background-color: var(--cor);
-}main article table th{
-    /*para colecar no topo*/
+    border-collapse: collapse;
 }
+main article table thead th{
+    background-color: #fff;
+}
+main article table tr:nth-child(2n){
+     background-color: #fff;
+
+}
+main article table  tr td { 
+    border: 1px solid #000;
+    text-align: center;
+}
+main article table th{
+    vertical-align: top;
+    border: 1px solid #000;
+}
+aside{
+    width: 96vw;
+    margin: auto;
+}
+aside > p{
+    padding-left: 10px;
+    font-weight: bold;
+}
+ aside fieldset > legend{
+    margin-left: 20px;
+    font-weight: 600;
+ }
+ aside fieldset div{
+    text-indent: 2em;
+ }
+ aside fieldset label{
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000aa;
+    font-weight: 500;
+ }
+ aside fieldset [type=text]{
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    border-bottom: 2px solid #000;
+ }
+ aside fieldset [type=date]{
+    display: block;
+    margin-left: 30px;
+    background-color: #00000004;
+    border: 0px;
+    border-bottom: 2px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ aside fieldset p{
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.673);
+ }
+ aside fieldset div#chackbox label{
+    margin-left: 30px;
+ }
+ aside fieldset [type=checkbox]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ aside fieldset #radio label{
+    margin-left: 30px;
+    margin: 10px 0px 10px 0px;
+    display: inline-block;
+ }
+ 
+ aside fieldset div#texto{
+    margin: auto;
+    width: 250px;
+    
+ }
+aside fieldset div#texto p{
+    margin-left: -30px;
+    margin-bottom: 10px;
+}aside fieldset [type=submit]{
+    padding: 10px 20px 10px 20px;
+    margin: 10px 0px 10px 0px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px .5px #000000f6;
+}
+
+
+footer{
+    background-color: var(--cor3);
+    margin-top: 20px;
+}
+footer  p{
+    color: var(--cor);
+    font-family: var(--fonte);
+    display: block;
+    padding: 10px 0px 10px 0px ;
+}    
+ footer ul{
+    text-decoration: none;
+    columns: 2;
+    padding-bottom: 20px;
+    list-style-type: none;
+ }
+ footer ul a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px #000;
+ }
+ footer ul a:hover{
+    color: var(--cor);
+    text-decoration: underline;
+ }
