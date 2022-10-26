@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="imagem/dog.png" type="image/x-icon">
     <link rel="stylesheet" href="styleo/style.css">
     <link rel="stylesheet" href="styleo/tela.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="styleo/telas-maiores.css" media="screen and (min-width:992px)">
 </head>
 <body>
     <header>
@@ -15,17 +16,17 @@
         <h1>Adote Aqui</h1>
         <p>Fizemos uma seleção dos pets mas querido pelas pessoas hoje em dia</p>
         <menu>
-            <a href="Akita/index.html" target="frem">Akita</a>
+            <a href="Akita/index.html" target="frem" rel="next">Akita</a>
 
-            <a href="Husky Siberiano/index.html" target="frem">husky</a>
+            <a href="Husky Siberiano/index.html" target="frem" rel="next">husky</a>
 
-            <a href="./Shih Tzu/index.html" target="frem">Shih</a>
+            <a href="./Shih Tzu/index.html" target="frem" rel="next">Shih</a>
         </menu>
     </header>
 
     <main>
         <article>
-            <iframe name="frem" src="ifram/ifram-para-a-pagima.html" frameborder="0"></iframe>
+            <iframe name="frem" src="ifram/ifram-para-a-pagima.html" frameborder="0" scalling="no" sandbox="allow-same-origin"></iframe>
             
         </article>
         <article>
@@ -34,58 +35,58 @@
                 <caption>Dados anuais</caption>
                 <thead>
                     <tr>
-                        <th class="position">paises</th>
-                        <th class="position">Cães de pequeno porte</th>
-                        <th class="position">Cães de médio perte</th>
-                        <th class="position">Cãens de grande porte</th>
-                        <th class="position">Gatos</th>
+                        <th class="position" scope="col">paises</th>
+                        <th class="position" scope="col">Cães de pequeno porte</th>
+                        <th class="position" scope="col">Cães de médio perte</th>
+                        <th class="position" scope="col">Cãens de grande porte</th>
+                        <th class="position" scope="col">Gatos</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>Brasil</th>
+                        <th scope="row">Brasil</th>
                         <td>20%</td>
                         <td>31%</td>
                         <td>42%</td>
                         <td>50%</td>
                     </tr>
                     <tr>
-                        <th>Arménia</th>
+                        <th scope="row">Arménia</th>
                         <td>22%</td>
                         <td>20%</td>
                         <td>21%</td>
                         <td>61%</td>
                     </tr>
                     <tr>
-                        <th>Angola</th>
+                        <th scope="row">Angola</th>
                         <td>10%</td>
                         <td>33%</td>
                         <td>49%</td>
                         <td>20%</td>
                     </tr>
                     <tr>
-                        <th>Brunei</th>
+                        <th scope="row">Brunei</th>
                         <td>45%</td>
                         <td>54%</td>
                         <td>65%</td>
                         <td>20%</td>
                     </tr>
                     <tr>
-                        <th>Butão</th>
+                        <th scope="row">Butão</th>
                         <td>11%</td>
                         <td>22%</td>
                         <td>6%</td>
                         <td>45%</td>
                     </tr>
                     <tr>
-                        <th>Canadá</th>
+                        <th scope="row">Canadá</th>
                         <td>80%</td>
                         <td>56%</td>
                         <td>11%</td>
                         <td>34%</td>
                     </tr>
                     <tr>
-                        <th>Equador</th>
+                        <th scope="row">Equador</th>
                         <td>78%</td>
                         <td>87%</td>
                         <td>82%</td>
@@ -106,7 +107,7 @@
                         </div>
                         <div>
                             <label for="iddata">data de nacimento</label>
-                            <input type="date" name="data" id="iddata">
+                            <input type="date" name="data" id="iddata" required>
                         </div>
                     
                         <div id="chackbox">
@@ -157,7 +158,7 @@
                         </div>
                         <div>
                             <label for="idtem">Quais petis você ja tem em casa ?</label>
-                            <input type="text" name="tem" id="idtem" list="lista" required>
+                            <input type="text" name="tem" id="idtem" list="lista" required placeholder="nome do pet">
                             <datalist id="lista">
                                 <optgroup label="pets">
                                     <option value="1">Cachorro</option>

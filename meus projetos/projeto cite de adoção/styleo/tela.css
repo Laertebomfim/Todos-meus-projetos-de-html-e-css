@@ -1,8 +1,28 @@
 @charset "UTF8";
 
 
+header p{
+    font-size: 1.4em;
+}
 main iframe{
     transform: translate(-0%,-5%);
     max-height: 1100px;
    
+}
+aside fieldset legend{
+    font-size: 1.2em;
+}
+aside fieldset label{
+    font-size: 1.2em;
+}aside fieldset p{
+    font-size: 1.2em;
+}aside fieldset [type=checkbox]{
+    background-color: rgb(26, 101, 167);
+    margin-left: 10px;
+} aside fieldset [type=radio]{
+    margin-left: 10px;
+}
+aside fieldset div#texto > p{
+    width: 350px;
+    text-indent: 1em;
 }
