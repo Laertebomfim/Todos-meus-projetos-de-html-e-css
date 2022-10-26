@@ -27,10 +27,22 @@
             line-height: 1.5em;
             font-size: 1.2em;
         }
+        @media screen and (min-width:320px) {
+            img{
+                max-width: 200px;
+                max-height: 200px;
+            }
+            div#none{
+                display: none;
+            }
+        }
         @media screen and (min-width:768px) {
             img{
                 max-width: 600px;
                 max-height: 500px;
+            }
+            div#none{
+                display: inline;
             }
         }
     </style>
@@ -43,9 +55,14 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, voluptate? Sit vitae excepturi vel quibusdam eos odio error dolorum consequuntur reiciendis aliquam, accusantium nesciunt nulla omnis totam, laboriosam, labore iusto!
     </p>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quia, ullam dignissimos tempora, asperiores dolores, praesentium harum illo perferendis repudiandae quisquam accusantium. Necessitatibus, excepturi officia. Natus dicta architecto unde consequuntur.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis accusamus eaque illum molestias culpa facilis, aut dolorum natus excepturi neque assumenda quaerat, similique sequi aliquid. Ex quo harum atque recusandae!
-    </p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quia, ullam dignissimos tempora, asperiores dolores, praesentium harum illo perferendis repudiandae quisquam accusantium. Necessitatibus, excepturi officia. Natus dicta architecto unde consequuntur.</p>
+
+
+        <div id="none">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis accusamus eaque illum molestias culpa facilis, aut dolorum natus excepturi neque assumenda quaerat, similique sequi aliquid. Ex quo harum atque recusandae!</p>
+        </div>
+        
+    
     
 </body>
 </html>
