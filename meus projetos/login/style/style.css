@@ -1,0 +1,81 @@
+@charset "UTF8";
+:root{
+    --cor:#9498F2;
+    --cor2:#115D8C;
+    --cor3:#0B3B59;
+    --cor4:#F0F1F2;
+    --cor5:#05daf24f;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vw;   
+    height: 100vh;
+    background-image:linear-gradient(#9498F2 ,#115D8C ,#115D8C );
+}
+main{
+    background-color:var(--cor5);
+    width: 70vw;
+    height: 300px;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+h1{
+    margin-top: 30px;
+    color: var(--cor4);
+    text-shadow: 1px 1px 1px #000000ab;
+    text-align: center;
+}
+form{
+    margin-top: 40px;
+    
+}
+article#email label, article#senha label{
+    display: block;
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: 8vw;
+    color: var(--cor4);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.774);
+}
+
+article [type=email], [type=password], [type=submit]{
+    padding: 0.5em;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0px;
+    width: 57vw;
+}
+article [type=submit]{
+    font-size: 1em;
+    font-weight: bold;
+}
+article [type=submit]:hover{
+    background-color: mediumspringgreen;
+    color: var(--cor4);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.639);
+    transform: translate(-0%,-3%);
+}
+@media screen and (min-width:992px) {
+    main{
+        width: 500px;
+    }
+    label{
+        margin-left: 0px;
+        text-indent: -70px;
+    }
+    article [type=email],[type=password],[type=submit]{
+        width: 440px;
+    }
+}
+
+
+
